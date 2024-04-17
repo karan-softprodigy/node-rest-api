@@ -9,6 +9,10 @@ const cors = require("cors");
 
 const app = express();
 
+app.get("/", function (req, res) {
+  res.send("Node rest api");
+});
+
 //Middleware:-
 //using body-parser to parse the data into json when user submit any form or send data from client side
 app.use(bodyParser.json());
